@@ -22,7 +22,7 @@ public class TestClass {
         TemaXMLRepository fileRepository2 = new TemaXMLRepository(temaValidator, "teme.xml");
         NotaXMLRepository fileRepository3 = new NotaXMLRepository(notaValidator, "note.xml");
 
-        service = new Service(fileRepository1, fileRepository2, fileRepository3);
+        TestClass.service = new Service(fileRepository1, fileRepository2, fileRepository3);
     }
 
     @Test
