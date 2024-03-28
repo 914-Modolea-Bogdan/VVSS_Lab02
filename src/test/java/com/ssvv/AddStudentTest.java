@@ -1,3 +1,5 @@
+package com.ssvv;
+
 import org.example.domain.Nota;
 import org.example.domain.Student;
 import org.example.domain.Tema;
