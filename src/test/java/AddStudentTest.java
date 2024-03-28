@@ -4,10 +4,8 @@ import org.example.domain.Tema;
 import org.example.repository.*;
 import org.example.service.Service;
 import org.example.validation.*;
-import org.junit.Before;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedWriter;
@@ -16,7 +14,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 
-public class ClassTest {
+public class AddStudentTest {
 
     public static Service service;
 
@@ -46,17 +44,17 @@ public class ClassTest {
         TemaXMLRepository fileRepository2 = new TemaXMLRepository(temaValidator, "teme.xml");
         NotaXMLRepository fileRepository3 = new NotaXMLRepository(notaValidator, "note.xml");
 
-        ClassTest.service = new Service(fileRepository1, fileRepository2, fileRepository3);
+        AddStudentTest.service = new Service(fileRepository1, fileRepository2, fileRepository3);
     }
 
     @Test
-    public void testAddStudent() {
-        assert(ClassTest.service.saveStudent("70", "Ion", 934) == 0);
+    public void testValidStudent() {
+        assert(AddStudentTest.service.saveStudent("70", "Ion", 934) == 0);
     }
 
     @Test
-    public void testAddStudentFail() {
-        assert(ClassTest.service.saveStudent("6", "John", 1000) == 1);
+    public void testInvalidStudent() {
+        assert(AddStudentTest.service.saveStudent("6", "John", 1000) == 1);
     }
 
     @AfterAll
