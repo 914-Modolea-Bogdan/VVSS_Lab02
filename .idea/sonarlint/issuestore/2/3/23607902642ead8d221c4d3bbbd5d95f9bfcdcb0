@@ -1,0 +1,12 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(√åÃè
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ù¿ñ—
+O
+java:S5993"9Change the visibility of this constructor to "protected".(√åÃè
+]	java:S119
+"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ì–∑9
+]	java:S125%"<This block of commented-out lines of code should be removed.(Ï⁄¸œ˚ˇˇˇˇ8îπÙµË1
+@	java:S106("+Replace this use of System.out by a logger.(„≤‰î
+@	java:S106>"+Replace this use of System.out by a logger.(„≤‰î

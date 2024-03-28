@@ -58,7 +58,7 @@ public class ClassTest {
     public void testAddStudentFail() {
         assert(ClassTest.service.saveStudent("6", "John", 1000) == 1);
     }
-    
+
     @AfterAll
     public static void removeXML() {
         new File("studentiTest.xml").delete();
